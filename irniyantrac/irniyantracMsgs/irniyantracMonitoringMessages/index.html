@@ -7,8 +7,8 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="C-DOT">
       
-        <link rel="canonical" href="https://github.com/pootrivs/ccsp-docs/irniyantrac/irniyantracMsgs/irniyantracMonitoringMessages/">
       
       
         <link rel="prev" href="../irniyantracResourceHierarchyCreation/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Monitoring Messages - CCSP docs</title>
+        <title>IRNIYANTRAC Messages - CCSP docs</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#monitoring-container" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Monitoring Messages
+              IRNIYANTRAC Messages
             
           </span>
         </div>
@@ -545,6 +550,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Monitoring Messages
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -554,6 +570,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Container
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -634,6 +676,67 @@
 
   <h1>Monitoring Messages</h1>
 
+<h3 id="monitoring-container">Monitoring Container</h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Monitoring Container JSON</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>  <span class="s2">&quot;op&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>  <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;container-ResourceId&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>  <span class="s2">&quot;fr&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;DEVICE-AE-ID&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>  <span class="s2">&quot;rqi&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;unique-Request-Identifier&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>  <span class="s2">&quot;ty&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>  <span class="s2">&quot;ot&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;devTm&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>  <span class="s2">&quot;pc&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="s2">&quot;m2m:cin&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>      <span class="s2">&quot;lbl&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;ALTCNT&quot;</span><span class="p">],</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>      <span class="s2">&quot;cnf&quot;</span><span class="p">:</span> <span class="s2">&quot;irn:alert&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>      <span class="s2">&quot;con&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="s2">&quot;devID&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>        <span class="s2">&quot;astID&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>        <span class="s2">&quot;pstID&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>        <span class="s2">&quot;vndID&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>        <span class="s2">&quot;appID&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>        <span class="s2">&quot;msgTy&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>        <span class="s2">&quot;astTy&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>        <span class="s2">&quot;altTy&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>        <span class="s2">&quot;dgt&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>        <span class="s2">&quot;altVal&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;String value&gt;&quot;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>      <span class="p">}</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="p">}</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a>  <span class="p">},</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a>  <span class="s2">&quot;rvi&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="p">}</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -641,6 +744,8 @@
 
 
 
+  
+  
 
 
 
